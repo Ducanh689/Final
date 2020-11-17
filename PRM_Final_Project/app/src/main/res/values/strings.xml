@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Cuddle Home</string>
+
+    <!-- for login -->
+    <string name="user_name">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="btn_Login">Đăng nhập</string>
+    <string name="btn_Register">Đăng ký</string>
+    <string name="break_line">________________________ . ________________________</string>
+    <string name="f_line">Bằng cách đăng nhập, bạn đã chấp nhận các điều khoản của dịch vụ chúng tôi để hiển hơn về các điều khoản</string>
+    <string name="s_line">khoản</string>
+
+    <string name="link">
+        <![CDATA[
+            <a href="https://youtube.com/">bấm vào đây</a>
+        ]]>
+    </string>
+    <!-- end login -->
+
+    <!-- for register -->
+    <string name="dangky">Đăng ký</string>
+    <string name="dob">Ngày sinh</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="email">Email</string>
+    <string name="gender">Giới tính</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="validate_date">dd/MM/yyyy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- end register -->
+
+    <!-- for forgot password -->
+    <string name="forgot_password">Quên mật khẩu</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="Info">Quên mật khẩu</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="new_pass">Mật khẩu mới</string>
+    <string name="confirm_pass">Xác nhận mật khẩu</string>
+    <string name="change">Xác nhận</string>
+    <string name="Logo_Name">Cuddle Home</string>
+    <!-- end for forgot password -->
+
+    <!-- Home -->
+    <string name="tv_khu_vuc">Khu vực của bạn</string>
+    <string name="xem_them"><u>Thêm gợi ý</u></string>
+    <string name="Most_favourite">Được yêu thích nhất</string>
+    <string name="More">Xem thêm</string>
+
+    <!-- Post -->
+    <string name="Details_Description">Mô tả</string>
+    <string name="Details_Phone">Liên lạc:</string>
+    <string name="Details_Price_Unit">VND/ người</string>
+    <string name="Details_Price">Giá:</string>
+    <string name="Details_Rate">Đánh giá</string>
+    <string name="Details_Room_Condition">Tình trạng</string>
+    <string name="Details_Room_Square">Diện tích</string>
+    <string name="Details_Room_Fore_Pay">Đặt cọc</string>
+    <string name="Details_Address">Địa chỉ:</string>
+    <string name="Details_More">Xem thêm</string>
+    <string name="Details_Person">Số người:</string>
+    <string name="Details_Room_Near">Nhà trọ xung quanh</string>
+    <string name="btn_submit">Gửi</string>
+
+</resources>
