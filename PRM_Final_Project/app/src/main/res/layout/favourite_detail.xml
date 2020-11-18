@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="39dp"
+        android:layout_y="286dp"
+        android:text="3/4 người"
+        android:textColor="#6E0B6E"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="39dp"
+        android:layout_y="267dp"
+        android:text="Số 50 nghách 70 ngõ 349 Phố Minh Khai, Vĩnh Tuy"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="339dp"
+        android:layout_height="200dp"
+        android:layout_x="38dp"
+        android:layout_y="0dp"
+        android:background="#9A1111" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_x="39dp"
+        android:layout_y="214dp"
+        android:text="Nhà trọ Xanh Lá"
+        android:textColor="#020101"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="39dp"
+        android:layout_y="248dp"
+        android:text="5 triệu VND/người"
+        android:textColor="#6E0B6E"
+        android:textSize="14sp" />
+
+
+</AbsoluteLayout>

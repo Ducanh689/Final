@@ -171,6 +171,15 @@
                             android:layout_weight="1"
                             app:srcCompat="@drawable/phone_icon1" />
 
+                        <TextView
+                            android:id="@+id/txtHeart"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="#E24CED"
+                            android:gravity="center"
+                            android:text="❤" />
+
                     </LinearLayout>
 
                     <LinearLayout

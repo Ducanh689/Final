@@ -7,9 +7,11 @@ import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
@@ -18,10 +20,12 @@ import com.example.cuddlehome.GlobalVariable;
 import com.example.cuddlehome.OnPostClickListener;
 import com.example.cuddlehome.R;
 import com.example.cuddlehome.adpter.PostListAdapterHorizontal;
+import com.example.cuddlehome.dao.FavouriteDAO;
 import com.example.cuddlehome.dao.ImageDAO;
 import com.example.cuddlehome.dao.PostDAO;
 import com.example.cuddlehome.dao.RatingDAO;
 import com.example.cuddlehome.db.MyDatabase;
+import com.example.cuddlehome.entity.Favourite;
 import com.example.cuddlehome.entity.Image;
 import com.example.cuddlehome.entity.Post;
 import com.example.cuddlehome.entity.PostImage;
@@ -37,6 +41,7 @@ public class ViewDetailsActivity extends AppCompatActivity implements OnPostClic
     private Post post;
     private ImageDAO imageDAO;
     private RatingDAO ratingDAO;
+    private FavouriteDAO favouriteDAO;
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
@@ -61,6 +66,8 @@ public class ViewDetailsActivity extends AppCompatActivity implements OnPostClic
     private ImageView ava2;
     private List<Rating> ratings;
 
+    private TextView txtHeart;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +80,7 @@ public class ViewDetailsActivity extends AppCompatActivity implements OnPostClic
                 .build();
         postDAO = connection.createPostDAO();
         imageDAO = connection.createImageDAO();
+        favouriteDAO = connection.createFavouriteDAO();
 
         //Get Post By Id
         long id = getIntent().getLongExtra("postId", 0);
@@ -87,6 +95,7 @@ public class ViewDetailsActivity extends AppCompatActivity implements OnPostClic
         textViewPhone = findViewById(R.id.txtPhone);
         textViewDescription = findViewById(R.id.txtDescription);
         ratingBar = findViewById(R.id.ratingBar);
+        txtHeart = findViewById(R.id.txtHeart);
 
         textViewName.setText(post.getName());
         textViewPerson.setText(post.getCurrent_people() + "/" + post.getMax_people());
@@ -130,6 +139,18 @@ public class ViewDetailsActivity extends AppCompatActivity implements OnPostClic
         postImageListRecycler = postDAO.listPostNearBy(GlobalVariable.location);
         adapter = new PostListAdapterHorizontal(postImageListRecycler, this);
         recyclerView.setAdapter(adapter);
+
+        //Add favourite post
+        txtHeart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Favourite favourite = new Favourite();
+                favourite.setAccount_id(GlobalVariable.UserId);
+                favourite.setPost_id(post.getId());
+                favouriteDAO.insert(favourite);
+                Toast.makeText(getApplicationContext(),"add favorite motel !",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override

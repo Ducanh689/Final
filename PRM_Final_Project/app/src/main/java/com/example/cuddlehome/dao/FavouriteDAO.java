@@ -25,4 +25,7 @@ public interface FavouriteDAO {
 
     @Query("Select * from Favourite")
     public List<Favourite> listFavourite();
+
+    @Query("Select * from Favourite where AccountId = :accID")
+    public List<Favourite> listFavouriteByAccountId(long accID);
 }
