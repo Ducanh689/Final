@@ -60,10 +60,12 @@ public class HomeActivity extends AppCompatActivity implements OnPostClickListen
         //Recycler View
         recyclerView = findViewById(R.id.recyclerView_home);
         recyclerView.setHasFixedSize(true);
+
         LinearLayoutManager layoutManager
                 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(layoutManager);
         listPostWithImages = postDAO.listPostImages();
+        //adapter
         adapter = new PostListAdapterHorizontal(listPostWithImages, this);
         recyclerView.setAdapter(adapter);
 

@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.cuddlehome.GlobalVariable;
 import com.example.cuddlehome.R;
 import com.example.cuddlehome.dao.AccountDAO;
 import com.example.cuddlehome.db.MyDatabase;
@@ -39,9 +40,9 @@ public class ChangePasswordActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String newPass = editTextNewPass.getText().toString().trim();
                 String confirmPass = editTextConfirmNewPass.getText().toString().trim();
-                myDataBase = Room.databaseBuilder(getApplicationContext(), MyDatabase.class, "project.db").allowMainThreadQueries().build();
+                myDataBase = Room.databaseBuilder(getApplicationContext(), MyDatabase.class, GlobalVariable.dbName).allowMainThreadQueries().build();
                 AccountDAO accountDAO = myDataBase.createAccountDAO();
-                if (confirmPass.equals(newPass)) {
+                if (confirmPass.equals(newPass) && newPass.length() >= 8) {
                     Intent intent1 = getIntent();
                     Bundle bundle = intent1.getExtras();
                     if (bundle != null) {
@@ -57,6 +58,9 @@ public class ChangePasswordActivity extends AppCompatActivity {
                     }
                 } else {
                     Toast.makeText(getApplicationContext(), "Xác nhận mật khẩu không đúng", Toast.LENGTH_SHORT).show();
+                }
+                if(newPass.length() < 8){
+                    Toast.makeText(getApplicationContext(), "Mật khẩu ít nhất có 8 ký tự", Toast.LENGTH_SHORT).show();
                 }
             }
         });
