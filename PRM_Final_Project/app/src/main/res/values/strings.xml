@@ -62,4 +62,20 @@
     <string name="Details_Room_Near">Nhà trọ xung quanh</string>
     <string name="btn_submit">Gửi</string>
 
+    <!-- add motel-->
+    <string name="info_motel">Nhập thông tin nhà trọ</string>
+    <string name="name_motel">Tên trọ:</string>
+    <string name="address_motel">Địa chỉ:</string>
+    <string name="phone_motel">Liên lạc:</string>
+    <string name="price_motel">Giá:</string>
+    <string name="deposit_motel">Đặt cọc:</string>
+    <string name="square_motel">Diện tích:</string>
+    <string name="max_people">Số người tối đa:</string>
+    <string name="available">Số người hiện tại:</string>
+    <string name="des">Mô tả:</string>
+    <string name="takePickture">Chọn ảnh:</string>
+    <string name="btnCancel">Hủy</string>
+    <string name="btnDang">Đăng</string>
+    <!-- end add motel-->
+
 </resources>

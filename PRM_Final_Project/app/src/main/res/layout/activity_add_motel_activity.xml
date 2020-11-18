@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddMotelActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="392dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="23dp"
+        android:gravity="center"
+        android:text="@string/info_motel"
+        android:textColor="#854545"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtNameMotel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="99dp"
+        android:text="@string/name_motel"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtPriceMotel"
+        app:layout_constraintEnd_toStartOf="@+id/edtNameMotel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="91dp"
+        android:text="@string/takePickture"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtAddressPicture"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDes" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="33dp"
+        android:text="@string/deposit_motel"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView30"
+        app:layout_constraintEnd_toStartOf="@+id/edtSquareMotel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtPriceMotel" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/des"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtDes"
+        app:layout_constraintEnd_toStartOf="@+id/edtAvailablePeople"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAvailablePeople" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="68dp"
+        android:text="@string/square_motel"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtSquareMotel"
+        app:layout_constraintEnd_toStartOf="@+id/edtSquareMotel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtSquareMotel" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="69dp"
+        android:text="@string/max_people"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        app:layout_constraintEnd_toStartOf="@+id/edtMaxPeople"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="168dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="69dp"
+        android:text="@string/available"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edtMaxPeople"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="67dp"
+        android:text="@string/price_motel"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView30"
+        app:layout_constraintEnd_toStartOf="@+id/edtPriceMotel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="34dp"
+        android:text="@string/phone_motel"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintEnd_toStartOf="@+id/edtPhoneMotel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNameMotel" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="78dp"
+        android:text="@string/address_motel"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtPhoneMotel"
+        app:layout_constraintEnd_toStartOf="@+id/edtAddressMotel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <EditText
+        android:id="@+id/edtNameMotel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtAddressMotel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/edtPriceMotel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:inputType="number|textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/edtPhoneMotel" />
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:inputType="number|textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtSquareMotel"
+        app:layout_constraintEnd_toEndOf="@+id/edtSquareMotel"
+        app:layout_constraintStart_toStartOf="@+id/edtPriceMotel"
+        app:layout_constraintTop_toBottomOf="@+id/edtPriceMotel" />
+
+    <EditText
+        android:id="@+id/edtSquareMotel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:inputType="number|textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtMaxPeople"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrice" />
+
+    <EditText
+        android:id="@+id/edtPhoneMotel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtPriceMotel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddressMotel" />
+
+    <EditText
+        android:id="@+id/edtAddressMotel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtPhoneMotel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/edtNameMotel" />
+
+    <EditText
+        android:id="@+id/edtMaxPeople"
+        android:layout_width="152dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="18dp"
+        android:ems="10"
+        android:inputType="number|textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtAvailablePeople"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/edtSquareMotel" />
+
+    <EditText
+        android:id="@+id/edtAvailablePeople"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="18dp"
+        android:ems="10"
+        android:inputType="number|textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/edtMaxPeople" />
+
+    <EditText
+        android:id="@+id/edtDes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#F44336"
+        android:text="@string/btnCancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnOk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddressPicture" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="#00F80A"
+        android:text="@string/btnDang"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCancel"
+        app:layout_constraintTop_toTopOf="@+id/btnCancel" />
+
+    <TextView
+        android:id="@+id/edtAddressPicture"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="37dp"
+        android:enabled="true"
+        android:hint="tên ảnh"
+        app:layout_constraintBottom_toTopOf="@+id/btnCancel"
+        app:layout_constraintEnd_toEndOf="@+id/btnOk"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="145dp"
+        android:src="@drawable/picture"
+        app:layout_constraintBottom_toTopOf="@+id/edtAddressPicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView31"
+        app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

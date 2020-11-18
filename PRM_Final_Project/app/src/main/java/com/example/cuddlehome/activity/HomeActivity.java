@@ -114,7 +114,10 @@ public class HomeActivity extends AppCompatActivity implements OnPostClickListen
                 break;
             case R.id.item3:
                 // tiến thêm activity trọ ở đây
+                Intent intent3 = new Intent(this, AddMotelActivity.class);
+                startActivity(intent3);
                 // you follow ?
+                // cho cái dùi cui bây giờ
         }
 
         return super.onOptionsItemSelected(item);
