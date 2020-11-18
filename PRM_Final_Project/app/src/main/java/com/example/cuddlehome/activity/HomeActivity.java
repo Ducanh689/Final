@@ -84,26 +84,26 @@ public class HomeActivity extends AppCompatActivity implements OnPostClickListen
     @Override
     public void OnPostClick(int position, int option) {
         PostImage postImage = null;
-        if (option == 1){
+        if (option == 1) {
             postImage = listPostWithImages.get(position);
         } else {
             postImage = listPostWithImages2.get(position);
         }
         Intent intent = new Intent(HomeActivity.this, ViewDetailsActivity.class);
-        intent.putExtra("postId",postImage.getPost().getId());
+        intent.putExtra("postId", postImage.getPost().getId());
         startActivity(intent);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu_layout,menu);
+        menuInflater.inflate(R.menu.menu_layout, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.item1:
                 Intent intent = new Intent(this, FavouriteActivity.class);
                 startActivity(intent);
@@ -112,6 +112,9 @@ public class HomeActivity extends AppCompatActivity implements OnPostClickListen
                 Intent intent2 = new Intent(this, LoginActivity.class);
                 startActivity(intent2);
                 break;
+            case R.id.item3:
+                // tiến thêm activity trọ ở đây
+                // you follow ?
         }
 
         return super.onOptionsItemSelected(item);
